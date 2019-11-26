@@ -27,15 +27,9 @@ export default (app: Application) => {
   router.post('/classificationList', controller.classification.classlist);
 
   /**
-   * 个人简介
+   * gre
    */
-  router.post('/profile');
 
-
-  /**
-   * 个人简历
-   */
-  router.post('/resume');
 
 
 };

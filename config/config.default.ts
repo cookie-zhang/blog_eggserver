@@ -42,7 +42,7 @@ export default (appInfo: EggAppInfo) => {
 　　　　enable: false,
        ignoreJSON: true
 　　},
-　　domainWhiteList: ['http://localhost:7002'],
+　　domainWhiteList: ['*'],
   };
   config.cors = {
     origin: '*',// 匹配规则  域名+端口  *则为全匹配
@@ -53,12 +53,6 @@ export default (appInfo: EggAppInfo) => {
   const bizConfig = {
     sourceUrl: '*',
   };
-  // exports.cluster = {
-  //   listen: {
-  //     port: 7002,
-  //     hostname: 'http://cookiezhang.com',
-  //   }
-  // };
   // the return config will combines to EggAppConfig
   return {
     ...config,

@@ -1,1 +1,0 @@
-import { Service } from 'egg'

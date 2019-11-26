@@ -35,7 +35,7 @@ export default (app: Application) => {
   /**
    * 个人简历
    */
-  router.post('/resume');
+  router.post('/profile');
 
 
 };

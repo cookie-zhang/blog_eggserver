@@ -29,13 +29,13 @@ export default (app: Application) => {
   /**
    * 个人简介
    */
-  router.post('/profile');
+  router.post('/classificationList', controller.classification.classlist);
 
 
   /**
    * 个人简历
    */
-  router.post('/resume');
+
 
 
 };

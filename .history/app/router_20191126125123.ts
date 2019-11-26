@@ -26,16 +26,8 @@ export default (app: Application) => {
   router.post('/creatclassification', controller.classification.creatclass);
   router.post('/classificationList', controller.classification.classlist);
 
-  /**
-   * 个人简介
-   */
-  router.post('/profile');
+  
 
-
-  /**
-   * 个人简历
-   */
-  router.post('/resume');
 
 
 };
