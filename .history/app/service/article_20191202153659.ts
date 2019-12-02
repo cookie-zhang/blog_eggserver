@@ -1,4 +1,5 @@
 import { Service } from 'egg';
+import  moment  from 'moment';
 
 /**
  * article Service
@@ -33,7 +34,7 @@ export default class Test extends Service {
       title: data['title'],
       introduce: data['introduce'],
       content: data['content'],
-      createdAt: new Date(),
+      createdAt: moment(new Date()).format('YYYY-MM-DD'),
       updatedAt: new Date()
     })
     return results;

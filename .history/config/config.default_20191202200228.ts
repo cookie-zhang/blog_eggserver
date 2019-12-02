@@ -14,7 +14,7 @@ export default (appInfo: EggAppInfo) => {
     // 单数据库信息配置
     client: {
       // host
-      host: '',
+      host: '47.104.191.170',
       // 端口号
       port: '3306',
       // 用户名
@@ -31,11 +31,11 @@ export default (appInfo: EggAppInfo) => {
   };
   // config.sequelize = {
   //   dialect: 'mysql',
-  //   host: ',
+  //   host: '47.104.191.170',
   //   port: 3306,
   //   database: 'xiaofei', // 数据库名称
   //   username: 'root', //账号
-  //   password: '.', //密码
+  //   password: 'xiaofei1993.', //密码
   // };
   config.security = {
     csrf: {

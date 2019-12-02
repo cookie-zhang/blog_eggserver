@@ -9,8 +9,7 @@ export default class Test extends Service {
    * 文章列表
    */
   public async getlist() {
-    const results = await this.app['mysql'].select('article',{orders: [ ['id', 'desc'] ]});
-    return results;
+    const results = await this.app['mysql'].select('article',  orders: ['id'] );
   }
   /**
    * 文章详情

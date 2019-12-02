@@ -34,7 +34,7 @@ export default class Test extends Service {
       introduce: data['introduce'],
       content: data['content'],
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: this.app.mysql.literals.now
     })
     return results;
   }

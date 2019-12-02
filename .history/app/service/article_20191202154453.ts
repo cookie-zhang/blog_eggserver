@@ -33,7 +33,7 @@ export default class Test extends Service {
       title: data['title'],
       introduce: data['introduce'],
       content: data['content'],
-      createdAt: new Date(),
+      createdAt: new Date().getTime(),
       updatedAt: new Date()
     })
     return results;

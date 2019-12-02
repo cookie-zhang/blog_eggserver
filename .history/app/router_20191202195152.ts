@@ -23,8 +23,8 @@ export default (app: Application) => {
   /**
    * 分类管理
    */
-  router.post('/data/creatclassification', controller.classification.creatclass);
-  router.post('/data/classificationList', controller.classification.classlist);
+  router.post('/creatclassification', controller.classification.creatclass);
+  router.post('/classificationList', controller.classification.classlist);
 
   /**
    * 个人简介

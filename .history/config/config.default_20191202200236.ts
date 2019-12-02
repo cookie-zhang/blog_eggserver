@@ -31,7 +31,7 @@ export default (appInfo: EggAppInfo) => {
   };
   // config.sequelize = {
   //   dialect: 'mysql',
-  //   host: ',
+  //   host: '47.104.191.170',
   //   port: 3306,
   //   database: 'xiaofei', // 数据库名称
   //   username: 'root', //账号

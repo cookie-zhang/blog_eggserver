@@ -12,19 +12,19 @@ export default (app: Application) => {
   */
   router.post('/data/articleList', controller.article.articlelist);
   router.get('/data/articleDetail', controller.article.detail);
-  router.post('/data/createarticle', controller.article.createarticle);
+  router.post('/createarticle', controller.article.createarticle);
 
   /**
    * 每日一语
    */
-  router.post('/data/createwords', controller.everydaywords.creatwords);
-  router.post('/data/getwordsList', controller.everydaywords.getwordslist);
+  router.post('/createwords', controller.everydaywords.creatwords);
+  router.post('/getwordsList', controller.everydaywords.getwordslist);
 
   /**
    * 分类管理
    */
-  router.post('/data/creatclassification', controller.classification.creatclass);
-  router.post('/data/classificationList', controller.classification.classlist);
+  router.post('/creatclassification', controller.classification.creatclass);
+  router.post('/classificationList', controller.classification.classlist);
 
   /**
    * 个人简介

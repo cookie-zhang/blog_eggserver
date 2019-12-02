@@ -1,4 +1,5 @@
 import { Service } from 'egg';
+import { Moment } from 'moment';
 
 /**
  * article Service
