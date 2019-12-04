@@ -3,6 +3,7 @@
 
 import 'egg';
 import ExportArticle from '../../../app/controller/article';
+import ExportBooks from '../../../app/controller/books';
 import ExportClassification from '../../../app/controller/classification';
 import ExportEverydaywords from '../../../app/controller/everydaywords';
 import ExportLoginregister from '../../../app/controller/loginregister';
@@ -10,6 +11,7 @@ import ExportLoginregister from '../../../app/controller/loginregister';
 declare module 'egg' {
   interface IController {
     article: ExportArticle;
+    books: ExportBooks;
     classification: ExportClassification;
     everydaywords: ExportEverydaywords;
     loginregister: ExportLoginregister;

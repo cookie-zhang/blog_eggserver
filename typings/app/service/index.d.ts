@@ -3,6 +3,7 @@
 
 import 'egg';
 import ExportArticle from '../../../app/service/article';
+import ExportBooks from '../../../app/service/books';
 import ExportClassification from '../../../app/service/classification';
 import ExportEverydaywords from '../../../app/service/everydaywords';
 import ExportLoginregister from '../../../app/service/loginregister';
@@ -10,6 +11,7 @@ import ExportLoginregister from '../../../app/service/loginregister';
 declare module 'egg' {
   interface IService {
     article: ExportArticle;
+    books: ExportBooks;
     classification: ExportClassification;
     everydaywords: ExportEverydaywords;
     loginregister: ExportLoginregister;
