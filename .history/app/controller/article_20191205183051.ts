@@ -51,9 +51,6 @@ export default class HomeController extends Controller {
       data: info
     }
   }
-  /**
-   * dianzan
-   */
   public async dianzan(){
     const { ctx } = this;
     const data = ctx.request.body;

@@ -52,7 +52,7 @@ export default class HomeController extends Controller {
     }
   }
   /**
-   * dianzan
+   * 
    */
   public async dianzan(){
     const { ctx } = this;

@@ -46,11 +46,12 @@ export default class Test extends Service {
   public async updatearticle(data:Object){
     const results = await this.app['mysql'].update('article',data)
     return results;
-  }
-  public async deletearticle(data:Object){
-    const results = await this.app['mysql'].delete('article', data)
+  }deletearticle
+  public async updatearticle(data:Object){
+    const results = await this.app['mysql'].update('article',data)
     return results;
-  }
+  }deletearticle
+
   public async insertdianzan(data:Object){
     const results = await this.app['mysql'].insert('dianzan',{
       id: data['id'],
@@ -58,10 +59,12 @@ export default class Test extends Service {
     })
     return results;
   }
+
   public async dianzan(id:Number){
-    const results = await this.app['mysql'].get('dianzan', id)
+    const results = await this.app['mysql'].get('dianzan', {id: id})
     return results;
   }
+
   /**
    * 点赞更新
    */

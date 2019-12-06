@@ -59,9 +59,10 @@ export default class Test extends Service {
     return results;
   }
   public async dianzan(id:Number){
-    const results = await this.app['mysql'].get('dianzan', id)
+    const results = await this.app['mysql'].get('dianzan', {id: id})
     return results;
   }
+
   /**
    * 点赞更新
    */

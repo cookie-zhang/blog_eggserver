@@ -47,26 +47,9 @@ export default class Test extends Service {
     const results = await this.app['mysql'].update('article',data)
     return results;
   }
-  public async deletearticle(data:Object){
-    const results = await this.app['mysql'].delete('article', data)
-    return results;
-  }
-  public async insertdianzan(data:Object){
-    const results = await this.app['mysql'].insert('dianzan',{
-      id: data['id'],
-      like:data['like'],
-    })
-    return results;
-  }
-  public async dianzan(id:Number){
-    const results = await this.app['mysql'].get('dianzan', id)
-    return results;
-  }
-  /**
-   * 点赞更新
-   */
-  public async dianzanupdate(data:Object){
-    const results = await this.app['mysql'].update('dianzan',data)
+
+  public async updatearticle(data:Object){
+    const results = await this.app['mysql'].update('article',data)
     return results;
   }
 }

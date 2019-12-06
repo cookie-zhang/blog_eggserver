@@ -50,10 +50,7 @@ export default class HomeController extends Controller {
       code: 200,
       data: info
     }
-  }
-  /**
-   * dianzan
-   */
+  }deletearticle
   public async dianzan(){
     const { ctx } = this;
     const data = ctx.request.body;

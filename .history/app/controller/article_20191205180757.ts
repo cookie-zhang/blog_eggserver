@@ -27,7 +27,11 @@ export default class HomeController extends Controller {
       id: info.insertId,
       like: 0 
     }
-    await ctx.service.article.insertdianzan(dianzanData);
+
+   const aa =  await ctx.service.article.insertdianzan(dianzanData);
+   console.log(aa)
+   console.log(aa)
+
     this.ctx.body = {
       code: 200,
       data: info
@@ -42,18 +46,6 @@ export default class HomeController extends Controller {
       data: info
     }
   }
-  public async deletearticle(){
-    const { ctx } = this;
-    const data = ctx.request.body;
-    const info = await ctx.service.article.deletearticle(data);
-    this.ctx.body = {
-      code: 200,
-      data: info
-    }
-  }
-  /**
-   * dianzan
-   */
   public async dianzan(){
     const { ctx } = this;
     const data = ctx.request.body;

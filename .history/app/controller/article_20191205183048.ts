@@ -42,18 +42,15 @@ export default class HomeController extends Controller {
       data: info
     }
   }
-  public async deletearticle(){
+  public async updatearticle(){
     const { ctx } = this;
     const data = ctx.request.body;
-    const info = await ctx.service.article.deletearticle(data);
+    const info = await ctx.service.article.updatearticle(data);
     this.ctx.body = {
       code: 200,
       data: info
     }
-  }
-  /**
-   * dianzan
-   */
+  }deletearticle
   public async dianzan(){
     const { ctx } = this;
     const data = ctx.request.body;

@@ -14,7 +14,7 @@ export default (app: Application) => {
   router.get('/data/articleDetail', controller.article.detail);
   router.post('/data/createarticle', controller.article.createarticle);
   router.post('/data/updatearticle', controller.article.updatearticle);
-  router.post('/data/deletearticle', controller.article.deletearticle);
+  router.post('/data/deletearticle', controller.article.updatearticle);
 
 
   router.post('/data/dianzan', controller.article.dianzan);
