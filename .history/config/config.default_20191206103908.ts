@@ -14,15 +14,15 @@ export default (appInfo: EggAppInfo) => {
     // 单数据库信息配置
     client: {
       // host
-      host: '',
+      host: 'cookiezhang.com',
       // 端口号
       port: '3306',
       // 用户名
-      user: '',
+      user: 'root',
       // 密码
-      password: '',
+      password: 'xiaofei1993.',
       // 数据库名
-      database: '',
+      database: 'xiaofei',
       charset : 'utf8mb4'
     },
     // 是否加载到 app 上，默认开启

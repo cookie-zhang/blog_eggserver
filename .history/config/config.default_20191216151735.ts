@@ -22,7 +22,7 @@ export default (appInfo: EggAppInfo) => {
       // 密码
       password: '',
       // 数据库名
-      database: '',
+      database: 'xiaofei',
       charset : 'utf8mb4'
     },
     // 是否加载到 app 上，默认开启
