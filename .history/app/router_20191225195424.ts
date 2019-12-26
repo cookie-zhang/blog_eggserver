@@ -25,11 +25,11 @@ export default (app: Application) => {
   /**
    * 力扣
    */
-  router.post('/data/lettcodeList', controller.lettcode.lettcodelist);
-  router.get('/data/lettcodeDetail', controller.lettcode.lettcodedetail);
-  router.post('/data/createLettcode', controller.lettcode.createLettcode);
-  router.post('/data/updateLettcode', controller.lettcode.updateLettcode);
-  router.post('/data/deleteLettcode', controller.lettcode.deleteLettcode);
+  router.post('/data/lettcodeList', controller.lettcode.articlelist);
+  router.get('/data/lettcodeDetail', controller.lettcode.detail);
+  router.post('/data/createLettcode', controller.lettcode.createarticle);
+  router.post('/data/updateLettcode', controller.lettcode.updatearticle);
+  router.post('/data/deleteLettcode', controller.lettcode.deletearticle);
 
  
 

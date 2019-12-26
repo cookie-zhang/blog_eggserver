@@ -6,6 +6,7 @@ import ExportArticle from '../../../app/controller/article';
 import ExportBooks from '../../../app/controller/books';
 import ExportClassification from '../../../app/controller/classification';
 import ExportEverydaywords from '../../../app/controller/everydaywords';
+import ExportLettcode from '../../../app/controller/lettcode';
 import ExportLoginregister from '../../../app/controller/loginregister';
 
 declare module 'egg' {
@@ -14,6 +15,7 @@ declare module 'egg' {
     books: ExportBooks;
     classification: ExportClassification;
     everydaywords: ExportEverydaywords;
+    lettcode: ExportLettcode;
     loginregister: ExportLoginregister;
   }
 }

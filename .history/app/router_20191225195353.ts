@@ -10,28 +10,23 @@ export default (app: Application) => {
   /**
   * 文章
   */
-  router.post('/data/articleList', controller.article.articlelist);
-  router.get('/data/articleDetail', controller.article.detail);
-  router.post('/data/createarticle', controller.article.createarticle);
-  router.post('/data/updatearticle', controller.article.updatearticle);
-  router.post('/data/deletearticle', controller.article.deletearticle);
-
-  /**
-   * 点赞
-   */
-  router.post('/data/dianzan', controller.article.dianzan);
-  router.post('/data/dianzanUpdate', controller.article.dianzanupdate);
+  router.post('/data/articleList', controller.lettcode.articlelist);
+  router.get('/data/articleDetail', controller.lettcode.detail);
+  router.post('/data/createarticle', controller.lettcode.createarticle);
+  router.post('/data/updatearticle', controller.lettcode.updatearticle);
+  router.post('/data/deletearticle', controller.lettcode.deletearticle);
 
   /**
    * 力扣
    */
-  router.post('/data/lettcodeList', controller.lettcode.lettcodelist);
-  router.get('/data/lettcodeDetail', controller.lettcode.lettcodedetail);
-  router.post('/data/createLettcode', controller.lettcode.createLettcode);
-  router.post('/data/updateLettcode', controller.lettcode.updateLettcode);
-  router.post('/data/deleteLettcode', controller.lettcode.deleteLettcode);
+  router.post('/data/lettcodeList', controller.article.articlelist);
+  router.get('/data/lettcodeDetail', controller.article.detail);
+  router.post('/data/createLettcode', controller.article.createarticle);
+  router.post('/data/updateLettcode', controller.article.updatearticle);
+  router.post('/data/deleteLettcode', controller.article.deletearticle);
 
- 
+  router.post('/data/dianzan', controller.article.dianzan);
+  router.post('/data/dianzanUpdate', controller.article.dianzanupdate);
 
   /**
    * 每日一语

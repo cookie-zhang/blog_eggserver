@@ -28,8 +28,8 @@ export default (app: Application) => {
   router.post('/data/lettcodeList', controller.lettcode.lettcodelist);
   router.get('/data/lettcodeDetail', controller.lettcode.lettcodedetail);
   router.post('/data/createLettcode', controller.lettcode.createLettcode);
-  router.post('/data/updateLettcode', controller.lettcode.updateLettcode);
-  router.post('/data/deleteLettcode', controller.lettcode.deleteLettcode);
+  router.post('/data/updateLettcode', controller.lettcode.updatearticle);
+  router.post('/data/deleteLettcode', controller.lettcode.deletearticle);
 
  
 

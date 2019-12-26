@@ -17,21 +17,16 @@ export default (app: Application) => {
   router.post('/data/deletearticle', controller.article.deletearticle);
 
   /**
-   * 点赞
-   */
-  router.post('/data/dianzan', controller.article.dianzan);
-  router.post('/data/dianzanUpdate', controller.article.dianzanupdate);
-
-  /**
    * 力扣
    */
-  router.post('/data/lettcodeList', controller.lettcode.lettcodelist);
-  router.get('/data/lettcodeDetail', controller.lettcode.lettcodedetail);
-  router.post('/data/createLettcode', controller.lettcode.createLettcode);
-  router.post('/data/updateLettcode', controller.lettcode.updateLettcode);
-  router.post('/data/deleteLettcode', controller.lettcode.deleteLettcode);
+  router.post('/data/lettcodeList', controller.article.articlelist);
+  router.get('/data/articleDetail', controller.article.detail);
+  router.post('/data/createarticle', controller.article.createarticle);
+  router.post('/data/updatearticle', controller.article.updatearticle);
+  router.post('/data/deletearticle', controller.article.deletearticle);
 
- 
+  router.post('/data/dianzan', controller.article.dianzan);
+  router.post('/data/dianzanUpdate', controller.article.dianzanupdate);
 
   /**
    * 每日一语
